@@ -1,0 +1,1627 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <BasicButtonObject />
+    <BasicButtonObjectTextSupport />
+    <DashboardExportButton />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Project1_17459477359280' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='tcleaned_data' inline='true' name='federated.1pt5xtv0oz5fna1gja2us1ld9zia' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tcleaned_data' name='textscan.0bxgjnf0vm7tkb1goj4oy0hozgi5'>
+            <connection class='textscan' directory='C:/Users/Levis/Documents/moringaproject/Phase1/Project' filename='tcleaned_data.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0bxgjnf0vm7tkb1goj4oy0hozgi5' name='tcleaned_data.csv' table='[tcleaned_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_KE' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Event.Id' ordinal='1' />
+            <column datatype='string' name='Investigation.Type' ordinal='2' />
+            <column datatype='string' name='Accident.Number' ordinal='3' />
+            <column datatype='date' name='Event.Date' ordinal='4' />
+            <column datatype='string' name='Location' ordinal='5' />
+            <column datatype='string' name='Country' ordinal='6' />
+            <column datatype='real' name='Latitude' ordinal='7' />
+            <column datatype='real' name='Longitude' ordinal='8' />
+            <column datatype='string' name='Airport.Code' ordinal='9' />
+            <column datatype='string' name='Airport.Name' ordinal='10' />
+            <column datatype='string' name='Injury.Severity' ordinal='11' />
+            <column datatype='string' name='Aircraft.damage' ordinal='12' />
+            <column datatype='string' name='Aircraft.Category' ordinal='13' />
+            <column datatype='string' name='Registration.Number' ordinal='14' />
+            <column datatype='string' name='Make' ordinal='15' />
+            <column datatype='string' name='Model' ordinal='16' />
+            <column datatype='string' name='Amateur.Built' ordinal='17' />
+            <column datatype='real' name='Number.of.Engines' ordinal='18' />
+            <column datatype='string' name='Engine.Type' ordinal='19' />
+            <column datatype='string' name='FAR.Description' ordinal='20' />
+            <column datatype='string' name='Schedule' ordinal='21' />
+            <column datatype='string' name='Purpose.of.flight' ordinal='22' />
+            <column datatype='string' name='Air.carrier' ordinal='23' />
+            <column datatype='real' name='Total.Fatal.Injuries' ordinal='24' />
+            <column datatype='real' name='Total.Serious.Injuries' ordinal='25' />
+            <column datatype='real' name='Total.Minor.Injuries' ordinal='26' />
+            <column datatype='real' name='Total.Uninjured' ordinal='27' />
+            <column datatype='string' name='Weather.Condition' ordinal='28' />
+            <column datatype='string' name='Broad.phase.of.flight' ordinal='29' />
+            <column datatype='string' name='Report.Status' ordinal='30' />
+            <column datatype='date' name='Publication.Date' ordinal='31' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Ksh&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_KE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Event.Id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Event.Id]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Event.Id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Investigation.Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Investigation.Type]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Investigation.Type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accident.Number</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Accident.Number]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Accident.Number</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Event.Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Event.Date]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Event.Date</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Airport.Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Airport.Code]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Airport.Code</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Airport.Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Airport.Name]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Airport.Name</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Injury.Severity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Injury.Severity]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Injury.Severity</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aircraft.damage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Aircraft.damage]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Aircraft.damage</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aircraft.Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Aircraft.Category]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Aircraft.Category</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Registration.Number</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Registration.Number]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Registration.Number</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Make</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Make]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Make</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Model</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Model]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Model</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Amateur.Built</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Amateur.Built]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Amateur.Built</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number.of.Engines</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Number.of.Engines]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Number.of.Engines</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Engine.Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Engine.Type]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Engine.Type</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FAR.Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FAR.Description]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>FAR.Description</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Schedule</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Schedule]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Schedule</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Purpose.of.flight</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Purpose.of.flight]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Purpose.of.flight</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Air.carrier</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Air.carrier]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Air.carrier</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total.Fatal.Injuries</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total.Fatal.Injuries]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Total.Fatal.Injuries</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total.Serious.Injuries</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total.Serious.Injuries]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Total.Serious.Injuries</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total.Minor.Injuries</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total.Minor.Injuries]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Total.Minor.Injuries</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total.Uninjured</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total.Uninjured]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Total.Uninjured</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weather.Condition</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Weather.Condition]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Weather.Condition</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Broad.phase.of.flight</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Broad.phase.of.flight]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Broad.phase.of.flight</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Report.Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Report.Status]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Report.Status</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Publication.Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Publication.Date]</local-name>
+            <parent-name>[tcleaned_data.csv]</parent-name>
+            <remote-alias>Publication.Date</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='tcleaned_data.csv' datatype='table' name='[__tableau_internal_object_id__].[tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Levis/AppData/Local/Temp/TableauTemp/#TableauTemp_1ji5fp91ukvg9i183qkpf0tftrwo.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24542</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Event.Id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Event.Id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Event.Id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>24542</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Investigation.Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Investigation.Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Investigation.Type</remote-alias>
+              <ordinal>2</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Accident.Number</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Accident.Number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Accident.Number</remote-alias>
+              <ordinal>3</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>24542</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Event.Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Event.Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Event.Date</remote-alias>
+              <ordinal>4</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>5578</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location</remote-alias>
+              <ordinal>5</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6071</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>6</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>71</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Latitude</remote-alias>
+              <ordinal>7</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3946</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Longitude</remote-alias>
+              <ordinal>8</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3973</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Airport.Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Airport.Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Airport.Code</remote-alias>
+              <ordinal>9</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3806</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Airport.Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Airport.Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Airport.Name</remote-alias>
+              <ordinal>10</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5947</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Injury.Severity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Injury.Severity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Injury.Severity</remote-alias>
+              <ordinal>11</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Aircraft.damage</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Aircraft.damage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Aircraft.damage</remote-alias>
+              <ordinal>12</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Aircraft.Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Aircraft.Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Aircraft.Category</remote-alias>
+              <ordinal>13</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Registration.Number</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Registration.Number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Registration.Number</remote-alias>
+              <ordinal>14</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>22264</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Make</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Make]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Make</remote-alias>
+              <ordinal>15</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1596</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Model</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Model]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Model</remote-alias>
+              <ordinal>16</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2638</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Amateur.Built</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Amateur.Built]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Amateur.Built</remote-alias>
+              <ordinal>17</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number.of.Engines</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Number.of.Engines]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number.of.Engines</remote-alias>
+              <ordinal>18</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Engine.Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Engine.Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Engine.Type</remote-alias>
+              <ordinal>19</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FAR.Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[FAR.Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FAR.Description</remote-alias>
+              <ordinal>20</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Schedule</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Schedule]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Schedule</remote-alias>
+              <ordinal>21</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Purpose.of.flight</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Purpose.of.flight]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Purpose.of.flight</remote-alias>
+              <ordinal>22</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Air.carrier</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Air.carrier]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Air.carrier</remote-alias>
+              <ordinal>23</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7517</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total.Fatal.Injuries</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total.Fatal.Injuries]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total.Fatal.Injuries</remote-alias>
+              <ordinal>24</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total.Serious.Injuries</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total.Serious.Injuries]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total.Serious.Injuries</remote-alias>
+              <ordinal>25</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total.Minor.Injuries</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total.Minor.Injuries]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total.Minor.Injuries</remote-alias>
+              <ordinal>26</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total.Uninjured</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total.Uninjured]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total.Uninjured</remote-alias>
+              <ordinal>27</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>42</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weather.Condition</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Weather.Condition]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Weather.Condition</remote-alias>
+              <ordinal>28</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Broad.phase.of.flight</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Broad.phase.of.flight]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Broad.phase.of.flight</remote-alias>
+              <ordinal>29</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Report.Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Report.Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Report.Status</remote-alias>
+              <ordinal>30</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8777</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Publication.Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Publication.Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Publication.Date</remote-alias>
+              <ordinal>31</ordinal>
+              <family>tcleaned_data.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>728</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Kenya&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='tcleaned_data.csv' id='tcleaned_data.csv_052C8DAAB5E048299C5AC0819B8EC5C7'>
+            <properties context=''>
+              <relation connection='textscan.0bxgjnf0vm7tkb1goj4oy0hozgi5' name='tcleaned_data.csv' table='[tcleaned_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_KE' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Event.Id' ordinal='1' />
+                  <column datatype='string' name='Investigation.Type' ordinal='2' />
+                  <column datatype='string' name='Accident.Number' ordinal='3' />
+                  <column datatype='date' name='Event.Date' ordinal='4' />
+                  <column datatype='string' name='Location' ordinal='5' />
+                  <column datatype='string' name='Country' ordinal='6' />
+                  <column datatype='real' name='Latitude' ordinal='7' />
+                  <column datatype='real' name='Longitude' ordinal='8' />
+                  <column datatype='string' name='Airport.Code' ordinal='9' />
+                  <column datatype='string' name='Airport.Name' ordinal='10' />
+                  <column datatype='string' name='Injury.Severity' ordinal='11' />
+                  <column datatype='string' name='Aircraft.damage' ordinal='12' />
+                  <column datatype='string' name='Aircraft.Category' ordinal='13' />
+                  <column datatype='string' name='Registration.Number' ordinal='14' />
+                  <column datatype='string' name='Make' ordinal='15' />
+                  <column datatype='string' name='Model' ordinal='16' />
+                  <column datatype='string' name='Amateur.Built' ordinal='17' />
+                  <column datatype='real' name='Number.of.Engines' ordinal='18' />
+                  <column datatype='string' name='Engine.Type' ordinal='19' />
+                  <column datatype='string' name='FAR.Description' ordinal='20' />
+                  <column datatype='string' name='Schedule' ordinal='21' />
+                  <column datatype='string' name='Purpose.of.flight' ordinal='22' />
+                  <column datatype='string' name='Air.carrier' ordinal='23' />
+                  <column datatype='real' name='Total.Fatal.Injuries' ordinal='24' />
+                  <column datatype='real' name='Total.Serious.Injuries' ordinal='25' />
+                  <column datatype='real' name='Total.Minor.Injuries' ordinal='26' />
+                  <column datatype='real' name='Total.Uninjured' ordinal='27' />
+                  <column datatype='string' name='Weather.Condition' ordinal='28' />
+                  <column datatype='string' name='Broad.phase.of.flight' ordinal='29' />
+                  <column datatype='string' name='Report.Status' ordinal='30' />
+                  <column datatype='date' name='Publication.Date' ordinal='31' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' underline='true'>Total Serious Injuries Compared to the Purpose of flight</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tcleaned_data' name='federated.1pt5xtv0oz5fna1gja2us1ld9zia' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pt5xtv0oz5fna1gja2us1ld9zia'>
+            <column datatype='string' name='[Purpose.of.flight]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Total.Serious.Injuries]' role='measure' type='quantitative' />
+            <column-instance column='[Purpose.of.flight]' derivation='None' name='[none:Purpose.of.flight:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total.Serious.Injuries]' derivation='Sum' name='[sum:Total.Serious.Injuries:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[none:Purpose.of.flight:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[sum:Total.Serious.Injuries:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[none:Purpose.of.flight:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[none:Purpose.of.flight:nk]</rows>
+        <cols>[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[sum:Total.Serious.Injuries:qk]</cols>
+      </table>
+      <simple-id uuid='{D6BEA3FE-59FF-4327-8F32-818BFCE2C148}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12' underline='true'>Aircraft Category Compared to Safety (Uninjured)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tcleaned_data' name='federated.1pt5xtv0oz5fna1gja2us1ld9zia' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pt5xtv0oz5fna1gja2us1ld9zia'>
+            <column datatype='string' name='[Aircraft.Category]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Total.Uninjured]' role='measure' type='quantitative' />
+            <column-instance column='[Aircraft.Category]' derivation='None' name='[none:Aircraft.Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total.Uninjured]' derivation='Sum' name='[sum:Total.Uninjured:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[none:Aircraft.Category:nk]' value='161' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[none:Aircraft.Category:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[sum:Total.Uninjured:qk]</rows>
+        <cols>[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[none:Aircraft.Category:nk]</cols>
+      </table>
+      <simple-id uuid='{98389BF4-E5AB-483D-B7E4-C19ECD88107B}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' italic='true' underline='true'>Safetiness Based on Aircraft Category</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tcleaned_data' name='federated.1pt5xtv0oz5fna1gja2us1ld9zia' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pt5xtv0oz5fna1gja2us1ld9zia'>
+            <column datatype='string' name='[Aircraft.Category]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Total.Fatal.Injuries]' role='measure' type='quantitative' />
+            <column-instance column='[Aircraft.Category]' derivation='None' name='[none:Aircraft.Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total.Fatal.Injuries]' derivation='Sum' name='[sum:Total.Fatal.Injuries:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[sum:Total.Fatal.Injuries:qk]' />
+              <text column='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[none:Aircraft.Category:nk]' />
+              <color column='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[none:Aircraft.Category:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C86EE2DE-62E0-4DF9-9DDF-4AA1814D079D}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='10' underline='true'>Serious Injuries Based for Every Year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tcleaned_data' name='federated.1pt5xtv0oz5fna1gja2us1ld9zia' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pt5xtv0oz5fna1gja2us1ld9zia'>
+            <column datatype='date' name='[Publication.Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Total.Serious.Injuries]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Total.Uninjured]' role='measure' type='quantitative' />
+            <column-instance column='[Total.Serious.Injuries]' derivation='Sum' name='[sum:Total.Serious.Injuries:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total.Uninjured]' derivation='Sum' name='[sum:Total.Uninjured:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Publication.Date]' derivation='Year-Trunc' name='[tyr:Publication.Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[sum:Total.Uninjured:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[sum:Total.Serious.Injuries:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[sum:Total.Uninjured:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1pt5xtv0oz5fna1gja2us1ld9zia].[sum:Total.Serious.Injuries:qk] + [federated.1pt5xtv0oz5fna1gja2us1ld9zia].[sum:Total.Uninjured:qk])</rows>
+        <cols>[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[tyr:Publication.Date:qk]</cols>
+      </table>
+      <simple-id uuid='{8130C0D9-A82A-46BF-AACC-6D5BC5EFF2E6}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Safety based on Engine Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tcleaned_data' name='federated.1pt5xtv0oz5fna1gja2us1ld9zia' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pt5xtv0oz5fna1gja2us1ld9zia'>
+            <column datatype='string' name='[Engine.Type]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Total.Serious.Injuries]' role='measure' type='quantitative' />
+            <column-instance column='[Engine.Type]' derivation='None' name='[none:Engine.Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total.Serious.Injuries]' derivation='Sum' name='[sum:Total.Serious.Injuries:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[sum:Total.Serious.Injuries:qk]' />
+              <text column='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[none:Engine.Type:nk]' />
+              <color column='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[none:Engine.Type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2AF560CD-6BD5-4213-80C6-290385EF207C}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='860' maxwidth='1350' minheight='560' minwidth='520' sizing-mode='range' />
+      <zones>
+        <zone h='48256' id='3' name='Sheet 3' w='38593' x='1259' y='930' />
+        <zone h='48140' id='4' name='Sheet 3' pane-specification-id='0' param='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[none:Aircraft.Category:nk]' type-v2='color' w='13778' x='42593' y='2442' />
+        <zone h='53953' id='5' name='Sheet 1' w='35926' x='5704' y='52558' />
+        <zone h='78605' id='6' name='Sheet 1' pane-specification-id='5' param='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[none:Purpose.of.flight:nk]' type-v2='color' w='12444' x='42667' y='56047' />
+        <zone h='42326' id='9' name='Sheet 4' w='38667' x='58296' y='1628' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98140' id='7' param='vert' type-v2='layout-flow' w='97538' x='1231' y='930'>
+                <zone fixed-size='280' h='48256' id='3' is-fixed='true' name='Sheet 3' w='63538' x='1231' y='930'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='40814' id='4' name='Sheet 3' pane-specification-id='0' param='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[none:Aircraft.Category:nk]' type-v2='color' w='31538' x='65385' y='2442'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='53953' id='5' is-fixed='true' name='Sheet 1' w='63077' x='5692' y='52558'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='78605' id='6' name='Sheet 1' pane-specification-id='5' param='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[none:Purpose.of.flight:nk]' type-v2='color' w='26615' x='71846' y='56047'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{08E3AF57-B360-4830-8B89-0E1309AC4E44}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='56977' id='3' name='Sheet 2' w='66308' x='3385' y='5814' />
+        <zone h='37907' id='4' name='Sheet 2' pane-specification-id='2' param='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[none:Aircraft.Category:nk]' type-v2='color' w='30000' x='69077' y='5814' />
+        <zone h='35698' id='5' name='Sheet 4' w='88154' x='3846' y='63837' />
+        <zone h='8837' id='6' name='Sheet 4' pane-specification-id='1' param='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[:Measure Names]' type-v2='color' w='33077' x='52923' y='54535' />
+        <zone h='6047' id='7' type-v2='dashboard-object' w='25231' x='9231' y='6977'>
+          <button action='' button-click-action-metadata='powerpoint' button-type='text'>
+            <export-button-action>tabdoc:abstract-dashboard-button-export-wrapper dashboard-button-export-type=&quot;powerpoint&quot; dashboarddoc-id=&quot;{E818E19F-FE60-4C15-94E5-087938E2AD97}&quot;</export-button-action>
+            <button-visual-state>
+              <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+              <format attr='background-color' value='#333333' />
+            </button-visual-state>
+          </button>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='9' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98140' id='8' param='vert' type-v2='layout-flow' w='97538' x='1231' y='930'>
+                <zone fixed-size='280' h='56977' id='3' is-fixed='true' name='Sheet 2' w='66308' x='3385' y='5814'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='37907' id='4' name='Sheet 2' pane-specification-id='1' param='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[none:Aircraft.Category:nk]' type-v2='color' w='30000' x='69077' y='5814'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6047' id='7' type-v2='dashboard-object' w='25231' x='9231' y='6977'>
+                  <button action='' button-click-action-metadata='powerpoint' button-type='text'>
+                    <export-button-action>tabdoc:abstract-dashboard-button-export-wrapper dashboard-button-export-type=&quot;powerpoint&quot; dashboarddoc-id=&quot;{E818E19F-FE60-4C15-94E5-087938E2AD97}&quot;</export-button-action>
+                    <button-visual-state>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+                      <format attr='background-color' value='#333333' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='35698' id='5' is-fixed='true' name='Sheet 4' w='88154' x='3846' y='63837'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8837' id='6' name='Sheet 4' pane-specification-id='1' param='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[:Measure Names]' type-v2='color' w='33077' x='52923' y='54535'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E818E19F-FE60-4C15-94E5-087938E2AD97}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='5' param='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[none:Purpose.of.flight:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3882DB69-7336-426E-81D1-A6BD8116159F}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[none:Aircraft.Category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{78223A23-49A1-4243-AA6D-17C3941E9DB0}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[none:Aircraft.Category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1A1702D5-F870-4B7B-911E-71DDFF4930FA}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{53F0D2A7-ED31-49A2-BC16-3396C56FB412}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1pt5xtv0oz5fna1gja2us1ld9zia].[none:Engine.Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{42ACF1BB-A757-445D-9A66-EE7A2334FD06}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Sheet 1' />
+        <viewpoint name='Sheet 3' />
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{7F73D79D-56B4-43FB-8B72-47A526FC5BBF}' />
+    </window>
+    <window class='dashboard' name='Dashboard 3'>
+      <viewpoints>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='7' />
+      <simple-id uuid='{959A2B2C-13A3-47C8-9942-B81C36B3F3ED}' />
+    </window>
+  </windows>
+</workbook>
